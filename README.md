@@ -1,85 +1,91 @@
-# SAP RISE Contract Governance — KI-Assistent
+# SAP RISE Contract Governance — AI Assistant
 
-**Kostenlose KI-Anweisungen (Skill File) fuer Claude, ChatGPT, Gemini, Copilot und jeden anderen KI-Assistenten.**
+**Free AI instructions that turn Claude, ChatGPT, Gemini, or Copilot into a specialized advisor for SAP RISE contracts.**
 
-Dieses Repository enthaelt spezialisierte Anweisungen, mit denen jeder gaengige KI-Assistent zu einem kompetenten Berater fuer SAP RISE Vertraege wird — aus Kundenperspektive, nicht aus SAP-Sicht.
+This repository contains a skill file — a set of expert instructions you paste into any AI assistant. It transforms a general-purpose LLM into a knowledgeable advisor for SAP RISE commercial governance, from the customer's perspective.
 
 ---
 
-## Was kann dieser Assistent?
+## What this assistant knows
 
-- **RISE-Vertragsstrukturen erklaeren:** ACV-Zusammensetzung, FUE-Metriken, BTP Credits, Digital Access, SLA-Regelungen — verstaendlich und praxisnah aufbereitet.
-- **Kommerzielle Risiken aufzeigen:** Typische Fallstricke bei Nutzerklassifizierung, Fair-Use-Klauseln, Preisanpassungen und ungenutzten Credits identifizieren.
-- **Renewal-Governance unterstuetzen:** Checklisten, Timelines und Verhandlungsstrategien fuer die Vertragsverlaengerung bereitstellen.
-- **Kostenoptimierung vorschlagen:** Konkrete Hebel fuer FUE-Optimierung, BTP-Nutzung, Digital-Access-Programme und Scope-Bereinigung benennen.
+- **RISE contract structure:** ACV composition, FUE metrics, BTP credits, Digital Access, bundled and unbundled components — explained clearly and practically.
+- **Commercial mechanisms and risks:** Pricing models, derived charges, fair-use policies, overage rules, and the most common pitfalls in user classification and cost escalation.
+- **Renewal governance:** Timelines, negotiation levers, typical SAP tactics, exit scenarios, and how to prepare 12-18 months ahead.
+- **Compliance and audit:** How SAP audits work under RISE, typical findings, and how to stay ahead of them.
+- **July 2025 packaging changes:** The shift from tiered bundles to a la carte pricing, what was unbundled, and how it affects renewals and TCO.
 
 ---
 
 ## Installation
 
-Die Datei [`SAP-RISE-Contract-Governance.skill.md`](./SAP-RISE-Contract-Governance.skill.md) enthaelt alle Anweisungen. Kopieren Sie den gesamten Inhalt und fuegen Sie ihn wie folgt in Ihren KI-Assistenten ein:
+The file [`SAP-RISE-Contract-Governance.skill.md`](./SAP-RISE-Contract-Governance.skill.md) contains all instructions. Copy its entire content and paste it into your AI assistant as described below.
 
 ### Claude (Anthropic)
 
-1. Oeffnen Sie ein **Projekt** unter [claude.ai](https://claude.ai).
-2. Gehen Sie zu **Project Knowledge** (oder **Custom Instructions**).
-3. Fuegen Sie den Inhalt der Skill-Datei ein.
-4. Alle Gespraeche in diesem Projekt nutzen nun die SAP-RISE-Expertise.
+1. Open a **Project** at [claude.ai](https://claude.ai).
+2. Go to **Project Knowledge** (or **Custom Instructions**).
+3. Paste the full content of the skill file.
+4. All conversations in this project now use SAP RISE expertise.
 
 ### ChatGPT (OpenAI)
 
-1. Oeffnen Sie **Settings** → **Personalization** → **Custom Instructions**.
-2. Fuegen Sie den Inhalt unter "What would you like ChatGPT to know about you?" ein.
-3. Alternativ: Erstellen Sie einen eigenen **GPT** mit dem Skill-File als Instructions.
+1. Go to **Settings** > **Personalization** > **Custom Instructions**.
+2. Paste the content under "What would you like ChatGPT to know about you?"
+3. Alternatively: Create a dedicated **Custom GPT** with the skill file as its instructions.
 
 ### Gemini (Google)
 
-1. Starten Sie ein neues Gespraech.
-2. Fuegen Sie den Inhalt der Skill-Datei als ersten Prompt ein, eingeleitet mit: *"Verwende folgende Anweisungen fuer unser Gespraech:"*
-3. Gemini beruecksichtigt die Anweisungen fuer die gesamte Konversation.
+1. Open **Gems** and create a new Gem.
+2. Paste the skill file content as the Gem's instructions.
+3. Alternatively: Start a conversation and paste the content as context at the beginning.
 
-### GitHub Copilot
+### Microsoft Copilot
 
-1. Fuegen Sie den Inhalt als System-Prompt oder Custom Instructions ein.
-2. In Copilot Chat: Nutzen Sie die Skill-Datei als Kontext-Dokument.
+1. Paste the content as a system prompt or custom instructions in Copilot Chat.
+2. In enterprise setups: Use the skill file as a context document.
 
-### Andere KI-Assistenten
+### Any other LLM
 
-Das Skill File funktioniert mit jedem LLM, das Custom Instructions oder System Prompts unterstuetzt — darunter Mistral, Llama, Perplexity und weitere. Fuegen Sie den Inhalt einfach als Anweisung ein.
-
----
-
-## Beispiel-Prompts
-
-Sobald die Anweisungen geladen sind, koennen Sie zum Beispiel fragen:
-
-- *"Worauf muss ich bei meinem RISE-Vertrag besonders achten?"*
-- *"Wie setzt sich der ACV zusammen und welche Komponenten sind verhandelbar?"*
-- *"Unser Renewal steht in 14 Monaten an — was sollten wir jetzt tun?"*
-- *"Welche Risiken bestehen bei Digital Access, wenn wir ein Lieferantenportal anbinden?"*
-- *"Erstelle mir eine Management-Summary zum aktuellen Vertragsstatus."*
-- *"Was hat sich durch die SAP-Packaging-Aenderung im Juli 2025 fuer uns geaendert?"*
+The skill file works with any model that supports custom instructions or system prompts — including Mistral, Llama, Perplexity, and others. Paste the content as instructions or system prompt.
 
 ---
 
-## Hinweise
+## Example prompts
 
-- Dieser Assistent gibt **keine Rechtsberatung**. Bei vertraglichen Detailfragen ziehen Sie juristische Expertise hinzu.
-- Die Anweisungen bilden den Stand Maerz 2026 ab. SAP-Konditionen aendern sich — pruefen Sie bei Bedarf die Aktualitaet.
-- Fuer **vertragsspezifische Analyse**, Renewal-Begleitung oder laufende Governance empfiehlt sich professionelle Unterstuetzung.
+Once the instructions are loaded, try questions like these:
+
+- *"What should I watch out for in my RISE contract?"*
+- *"How is the ACV composed, and which components are negotiable?"*
+- *"Our renewal is in 14 months — what should we do now?"*
+- *"What are the risks with Digital Access if we connect a supplier portal?"*
+- *"Create a board-level summary of our contract situation."*
+- *"What changed with the SAP packaging update in July 2025, and how does it affect our renewal?"*
 
 ---
 
-## Lizenz
+## What this assistant cannot do
 
-MIT License — frei nutzbar, teilbar, anpassbar. Siehe [LICENSE](./LICENSE).
+This assistant provides **general knowledge** about SAP RISE contracts — structures, mechanisms, checklists, and strategic guidance. It cannot:
+
+- **Analyze your specific contract** — it does not have access to your data.
+- **Track your actual ACV, FUE utilization, or BTP consumption.**
+- **Model your specific renewal scenarios** with real numbers.
+- **Provide legal advice.**
+
+For contract-specific analysis, continuous governance, and data-driven renewal preparation — where an AI works with your actual structured contract data — consider a dedicated solution like **[FinOptory](https://finoptory.ai)**.
 
 ---
 
-## Erstellt von
+## License
+
+MIT License — free to use, share, and adapt. See [LICENSE](./LICENSE).
+
+---
+
+## Created by
 
 **[FinOptory](https://finoptory.ai)** — SAP RISE Contract Governance as a Managed Service.
 
-FinOptory bietet laufende Vertragsueberwachung, Renewal-Begleitung und Kostenoptimierung fuer SAP RISE Kunden als Managed Service an.
+FinOptory provides continuous contract monitoring, renewal preparation, and cost optimization for SAP RISE customers as a managed service.
 
-Fragen oder Feedback: [bernhard@green-dopamine.at](mailto:bernhard@green-dopamine.at)
+Questions or feedback: [bernhard@green-dopamine.at](mailto:bernhard@green-dopamine.at)
